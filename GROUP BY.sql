@@ -16,6 +16,19 @@
 --GROUP BY pegi_label_id;
 
 
---4- Mostrare il numero di videogiochi rilasciati ogni anno (11)
---5- Contare quanti videogiochi sono disponbiili per ciascun device (del device vogliamo solo l'ID) (7)
---6- Ordinare i videogame in base alla media delle recensioni (del videogioco vogliamo solo l'ID) (500)
+----4- Mostrare il numero di videogiochi rilasciati ogni anno (11)
+--SELECT COUNT(id)
+--FROM videogames
+--GROUP BY YEAR(release_DATE);
+
+
+----5- Contare quanti videogiochi sono disponbiili per ciascun device (del device vogliamo solo l'ID) (7)
+--SELECT COUNT(videogame_id)
+--FROM device_videogame
+--GROUP BY device_id;
+
+----6- Ordinare i videogame in base alla media delle recensioni (del videogioco vogliamo solo l'ID) (500)
+SELECT AVG(rating) AS average
+FROM reviews
+GROUP BY videogame_id
+ORDER BY AVG(rating) DESC
