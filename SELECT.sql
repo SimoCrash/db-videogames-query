@@ -58,6 +58,8 @@
 --SELECT DISTINCT videogame_id
 --FROM reviews
 --WHERE rating IS NOT NULL;  ----(risultato: 500)
+
+
 --*********** BONUS ***********
 --11- Selezionare il numero e la media delle recensioni per il videogioco con ID = 412 (review number = 12, avg_rating = 3)
 --12- Selezionare il numero di videogame che la software house con ID = 1 ha rilasciato nel 2018 (13)
