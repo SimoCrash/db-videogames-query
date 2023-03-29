@@ -1,6 +1,8 @@
 ﻿--1- Selezionare i dati di tutti giocatori che hanno scritto almeno una recensione, mostrandoli una sola volta (996)
-
-
+SELECT DISTINCT players.id, name, lastname, nickname, city
+FROM players
+INNER JOIN reviews
+ON players.id = reviews.player_id; 
 --2- Sezionare tutti i videogame dei tornei tenuti nel 2016, mostrandoli una sola volta (226)
 --3- Mostrare le categorie di ogni videogioco (1718)
 --4- Selezionare i dati di tutte le software house che hanno rilasciato almeno un gioco dopo il 2020, mostrandoli una sola volta (6)

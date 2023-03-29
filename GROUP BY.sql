@@ -28,7 +28,7 @@
 --GROUP BY device_id;
 
 ----6- Ordinare i videogame in base alla media delle recensioni (del videogioco vogliamo solo l'ID) (500)
-SELECT AVG(rating) AS average
-FROM reviews
-GROUP BY videogame_id
-ORDER BY AVG(rating) DESC
+--SELECT AVG(rating) AS average
+--FROM reviews
+--GROUP BY videogame_id
+--ORDER BY AVG(rating) DESC
