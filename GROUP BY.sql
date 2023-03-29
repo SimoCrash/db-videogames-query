@@ -1,6 +1,7 @@
 ﻿--1- Contare quante software house ci sono per ogni paese (3)
-
-
+SELECT COUNT(*)
+FROM software_houses
+GROUP BY country;
 --2- Contare quante recensioni ha ricevuto ogni videogioco (del videogioco vogliamo solo l'ID) (500)
 --3- Contare quanti videogiochi hanno ciascuna classificazione PEGI (della classificazione PEGI vogliamo solo l'ID) (13)
 --4- Mostrare il numero di videogiochi rilasciati ogni anno (11)

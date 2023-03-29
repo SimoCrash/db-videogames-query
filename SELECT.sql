@@ -17,13 +17,13 @@
 
 
 ----4- Selezionare tutte le recensioni scritte dal giocatore con ID = 800 (11)
---SELECT *
---FROM reviews
---WHERE player_id = 800; ----(risultato: 10)
+SELECT *
+FROM reviews
+WHERE player_id = 800; ----(risultato: 10)
 
 
 ----5- Contare quanti tornei ci sono stati nell'anno 2015 (9)
---SELECT *
+--SELECT COUNT(*) AS tornei_annuali
 --FROM tournaments
 --WHERE year = 2015;
 
