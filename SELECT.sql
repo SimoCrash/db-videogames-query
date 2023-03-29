@@ -17,9 +17,9 @@
 
 
 ----4- Selezionare tutte le recensioni scritte dal giocatore con ID = 800 (11)
-SELECT *
-FROM reviews
-WHERE player_id = 800; ----(risultato: 10)
+--SELECT *
+--FROM reviews
+--WHERE player_id = 800; ----(risultato: 10)
 
 
 ----5- Contare quanti tornei ci sono stati nell'anno 2015 (9)
@@ -57,7 +57,7 @@ WHERE player_id = 800; ----(risultato: 10)
 ----10- Selezionare gli id dei videogame che hanno ricevuto almeno una recensione da stelle, mostrandoli una sola volta (443)
 --SELECT DISTINCT videogame_id
 --FROM reviews
---WHERE rating IS NOT NULL;  ----(risultato: 500)
+--WHERE rating IS NOT NULL; ----(risultato: 500)
 
 
 --*********** BONUS ***********
