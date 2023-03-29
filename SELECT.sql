@@ -1,29 +1,39 @@
-﻿--1- Selezionare tutte le software house americane (3)
+﻿----1- Selezionare tutte le software house americane (3)
 --SELECT *
 --FROM software_houses
 --WHERE country = 'United States';
 
 
---2- Selezionare tutti i giocatori della città di 'Rogahnland' (2)
+----2- Selezionare tutti i giocatori della città di 'Rogahnland' (2)
 --SELECT * 
 --FROM players
 --WHERE city = 'Rogahnland';
 
 
---3- Selezionare tutti i giocatori il cui nome finisce per "a" (220)
+----3- Selezionare tutti i giocatori il cui nome finisce per "a" (220)
 --SELECT *
 --FROM players
 --WHERE name LIKE '%a';                                 -- qui LIKE ci permette di identificare una parte di stringa
 
 
---4- Selezionare tutte le recensioni scritte dal giocatore con ID = 800 (11)
+----4- Selezionare tutte le recensioni scritte dal giocatore con ID = 800 (11)
 --SELECT *
 --FROM reviews
---WHERE player_id = 800; --(10)
+--WHERE player_id = 800; --(risultato: 10)
 
 
 --5- Contare quanti tornei ci sono stati nell'anno 2015 (9)
+--SELECT *
+--FROM tournaments
+--WHERE year = 2015;
+
+
 --6- Selezionare tutti i premi che contengono nella descrizione la parola 'facere' (2)
+--SELECT *
+--FROM awards 
+--WHERE description LIKE '%facere%';
+
+
 --7- Selezionare tutti i videogame che hanno la categoria 2 (FPS) o 6 (RPG), mostrandoli una sola volta (del videogioco vogliamo solo l'ID) (287)
 --8- Selezionare tutte le recensioni con voto compreso tra 2 e 4 (2947)
 --9- Selezionare tutti i dati dei videogiochi rilasciati nell'anno 2020 (46)
